@@ -19,6 +19,19 @@
   .container-fluid {
     padding: 60px 50px;
   }
+
+  .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+
+  .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+
   .bg-grey {
     background-color: #f6f6f6;
   }
@@ -42,6 +55,7 @@
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
+    transition: box-shadow 0.5s;
   }
 
   .thumbnail img {
@@ -49,6 +63,11 @@
     height: 100%;
     margin-bottom: 10px;
   }
+
+  .thumbnail:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
   .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #f4511e;
@@ -90,6 +109,7 @@
   </form> 
 </div>
 
+<!-- Container (About Section) -->
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -104,6 +124,7 @@
   </div>
 </div>
 
+<!-- Vision & Mission -->
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
@@ -117,7 +138,10 @@
   </div>
 </div>
 
+<!-- Container (Services Section) -->
 <div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
@@ -154,6 +178,7 @@
   </div>
 </div>
 
+<!-- Container (Portfolio Section) -->
 <div class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2>
   <h4>What we have created</h4>
@@ -181,8 +206,9 @@
     </div>
 </div>
 
-<h2>What our customers say</h2>
+<!-- Customer Testamonials -->
 <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <h2>What our customers say</h2>
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
